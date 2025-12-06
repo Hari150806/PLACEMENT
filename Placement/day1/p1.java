@@ -1,4 +1,4 @@
-package Placement.day1;
+package Placement.Day1;
 
 import java.util.*;
 
