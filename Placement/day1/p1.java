@@ -1,4 +1,5 @@
-package day1;
+package Placement.day1;
+
 import java.util.*;
 
 public class p1 {
