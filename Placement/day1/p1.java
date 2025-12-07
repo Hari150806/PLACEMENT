@@ -2,7 +2,7 @@ package Placement.Day1;
 
 import java.util.*;
 
-public class p1 {
+public class p1 {  //star pattern using recursion
     public static void printTable(int n,int i,int j){
         if(i > j){
             return;

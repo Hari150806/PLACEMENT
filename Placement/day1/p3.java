@@ -1,7 +1,7 @@
 package Placement.Day1;
 import java.util.*;
 
-public class p3 {
+public class p3 {  // Swap first and last digits of a number
     public static void main(String[] args) {
         int a = 12345;
         int n=(int)Math.log10(a)+1;

@@ -1,7 +1,7 @@
 package Placement.Day2;
 
 public class p2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // Fibonacci series without recursion
 		int n= 7;
 		int a=0;
 		int b= 1;

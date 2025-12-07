@@ -1,7 +1,7 @@
 package Placement.Day1;
 import java.util.*; 
 
-public class p2 {
+public class p2 { //change first digit of a number
     
     public static void main(String[] args) {
         int originalNumber = 12345;

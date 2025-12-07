@@ -1,7 +1,7 @@
 package Placement.Day1;
 import java.util.*;
 
-public class p4 {
+public class p4 {  // swapping integer
     public static void main(String[] args) {
         int a = 12345;
         int rev=0;

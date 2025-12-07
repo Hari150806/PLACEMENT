@@ -3,7 +3,7 @@ package Placement.Day2;
 import java.util.Random;
 import java.util.Scanner;
 
-public class p1 {
+public class p1 {  // random number guessing game
     public static void main(String args[]){
         System.out.println("computer has choosen a random number from 1 to 100, can you guess it");
         Scanner sc = new Scanner(System.in);
