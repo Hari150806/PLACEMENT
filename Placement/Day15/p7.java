@@ -1,6 +1,6 @@
 package Placement.Day15;
 import java.util.*;
-public class p7 {  // height of tree
+public class p7 {  // level order traversal using queue
     static class TreeNode {
         int data;
         TreeNode left, right;
@@ -11,13 +11,22 @@ public class p7 {  // height of tree
             this.right = null;
         }
     }
-    public static int height(TreeNode root) {
+    public static void levelOrder(TreeNode root) {
         if (root == null) {
-            return 0;
+            return;
         }
-        int leftHeight = height(root.left);
-        int rightHeight = height(root.right);
-        return Math.max(leftHeight, rightHeight) + 1;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            TreeNode current = queue.poll();
+            System.out.print(current.data + " ");
+            if (current.left != null) {
+                queue.add(current.left);
+            }
+            if (current.right != null) {
+                queue.add(current.right);
+            }
+        }
     }
     public static void main(String[] args) {
         TreeNode root = new TreeNode(10);
@@ -29,8 +38,8 @@ public class p7 {  // height of tree
         root.right.left = new TreeNode(12);
         root.right.right.right = new TreeNode(15);
 
-        System.out.println("Height of tree = " + height(root));
+        System.out.print("Level Order Traversal: ");
+        levelOrder(root);
     }
-
     
 }

@@ -30,7 +30,7 @@ public class p6 {  // searchkey in tree
         root.right.left = new TreeNode(12);
         root.right.right.right = new TreeNode(15);
 
-        int key = 10;
+        int key =11;
         System.out.println("Search Key " + key + " = " + search(root, key));
     }
     

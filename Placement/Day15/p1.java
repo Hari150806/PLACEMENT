@@ -59,16 +59,7 @@ public class p1 { // tree
         }
         return countNodetwochild(root.left) + countNodetwochild(root.right);
     } 
-    //Search Key
-    public static boolean search(TreeNode root, int key) {
-        if (root == null) {
-            return false;
-        }
-        if (root.data == key) {
-            return true;
-        }
-        return search(root.left, key) || search(root.right, key);
-    }
+    
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
@@ -86,6 +77,6 @@ public class p1 { // tree
         System.out.println("NonLeaf Nodes = " + countNonleaf(root));
         System.out.println("Nodes with one child = " + countNodeonechild(root));
         System.out.println("Nodes with two children = " + countNodetwochild(root));
-        System.out.println("Search Key  = " + search(root, 14));
+       
     }
 }
